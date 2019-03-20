@@ -3,15 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@progress/kendo-base-component-react-wrapper": "^2018.3.1017",
+    "@progress/kendo-gantt-react-wrapper": "^2018.3.1017",
+    "@progress/kendo-ui": "^2019.1.313",
+    "axios": "^0.18.0",
+    "jquery": "^3.3.1",
+    "moment": "^2.24.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
-    "react-scripts": "2.1.5"
+    "react-redux": "^6.0.1",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.5",
+    "react-sizeme": "^2.5.2",
+    "react-timelines": "^2.5.2",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
   },
+  "proxy": "http://localhost:3001",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "node-env-run server --exec nodemon | pino-colada",
+    "dev": "run-p server start"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,5 +38,14 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-pino-logger": "^4.0.0",
+    "node-env-run": "^3.0.2",
+    "nodemon": "^1.18.10",
+    "npm-run-all": "^4.1.5",
+    "pino-colada": "^1.4.4"
+  }
 }

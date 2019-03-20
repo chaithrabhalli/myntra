@@ -31,3 +31,17 @@
     transform: rotate(360deg);
   }
 }
+
+.time-line-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  margin: 10px;
+}
+
+.color{
+  background-color: blueviolet
+}
